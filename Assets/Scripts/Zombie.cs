@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using VehicleBehaviour;
 
 public class Zombie : MonoBehaviour
 {
@@ -9,11 +10,13 @@ public class Zombie : MonoBehaviour
     public GameObject blood;
 
     private NavMeshAgent agent;
+    private Overseer overseer;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        overseer = FindFirstObjectByType<VehicleBehaviour.Overseer>();
 
         FindNewPosition();
     }
@@ -46,6 +49,7 @@ public class Zombie : MonoBehaviour
         if(other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             Instantiate(blood, transform.position, Quaternion.identity);
+            overseer.score += 100;
             Destroy(gameObject);
         }
     }
