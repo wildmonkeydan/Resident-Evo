@@ -23,9 +23,12 @@ namespace VehicleBehaviour
         // Update is called once per frame
         void FixedUpdate()
         {
-            scoreText.text = "SCORE: " + score.ToString();
+            scoreText.text = "SCORE: " + score.ToString();        
+        }
 
-            if(fuelOut && Input.GetKeyDown(KeyCode.Return))
+        void Update()
+        {
+            if (fuelOut && Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene("SampleScene");
             }

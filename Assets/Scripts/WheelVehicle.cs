@@ -213,13 +213,14 @@ namespace VehicleBehaviour {
         // Boost particles and sound
         [SerializeField] ParticleSystem[] boostParticles = new ParticleSystem[0];
         [SerializeField] AudioClip boostClip = default;
-        [SerializeField] AudioSource boostSource = default;
+        [SerializeField] public AudioSource boostSource = default;
         
         // Private variables set at the start
         Rigidbody rb = default;
         internal WheelCollider[] wheels = new WheelCollider[0];
         public float fuel = 1f;
         public UnityEvent fuelRunsOut;
+        public RectTransform needle;
 
         private Gamepad gamepad;
 
@@ -405,6 +406,9 @@ namespace VehicleBehaviour {
 
                 IsPlayer = false;
             }
+
+            needle.localEulerAngles = new Vector3(0, 0, (fuel - 1) * -90);
+
         }
 
         // Reposition the car to the start position
