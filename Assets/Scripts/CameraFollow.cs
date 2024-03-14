@@ -91,7 +91,9 @@ namespace VehicleBehaviour.Utils {
 
 			// Set transform with lerp
 			transform.position = Vector3.Lerp(transform.position, tPos, Time.fixedDeltaTime * lerpPositionMultiplier);
-			transform.rotation = Quaternion.Lerp(curRot, transform.rotation, Time.fixedDeltaTime * lerpRotationMultiplier);
+			Quaternion quat = Quaternion.Euler(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0));
+
+            transform.rotation = Quaternion.Lerp(curRot, quat, Time.fixedDeltaTime * lerpRotationMultiplier);
 
 			// Keep camera above the y:0.5f to prevent camera going underground
 			/*if (transform.position.y < 0.5f) {

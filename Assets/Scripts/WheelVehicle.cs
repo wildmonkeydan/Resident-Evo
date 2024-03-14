@@ -214,6 +214,7 @@ namespace VehicleBehaviour {
         [SerializeField] ParticleSystem[] boostParticles = new ParticleSystem[0];
         [SerializeField] AudioClip boostClip = default;
         [SerializeField] public AudioSource boostSource = default;
+        [SerializeField] public AudioSource engineSource;
         
         // Private variables set at the start
         Rigidbody rb = default;
