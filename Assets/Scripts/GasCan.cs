@@ -34,7 +34,7 @@ public class GasCan : MonoBehaviour
             if(car != null)
             {
                 car.fuel = 1f;
-                car.boostSource.PlayOneShot(refuel, 1f);
+                car.engineSource.PlayOneShot(refuel, 1f);
                 Destroy(gameObject);
             }
         }

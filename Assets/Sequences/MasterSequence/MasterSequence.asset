@@ -26,6 +26,8 @@ MonoBehaviour:
         m_Data:
         - rid: 4676016573942333441
         - rid: 4676016573942333444
+        - rid: 4676016575363940353
+        - rid: 4676016575363940355
         m_AvailableIndices:
           rid: -2
     - rid: 4676016573942333441
@@ -33,10 +35,10 @@ MonoBehaviour:
       data:
         m_Name: MasterSequence
         m_Fps: 60
-        m_Start: 0
-        m_Duration: 2
+        m_Start: 2
+        m_Duration: 5.133333333333333
         m_Parent: -1
-        m_Children: 01000000
+        m_Children: 010000000200000003000000
         m_Timeline: {fileID: 11400000, guid: c410685673e9a5d49a95418789a46939, type: 2}
         m_ChildrenTrack: {fileID: -591403381947125764, guid: c410685673e9a5d49a95418789a46939, type: 2}
         m_DefaultChildrenTrackName: Sequences
@@ -46,7 +48,7 @@ MonoBehaviour:
       data:
         m_Name: Intro
         m_Fps: -1
-        m_Start: 0
+        m_Start: 2
         m_Duration: 2
         m_Parent: 0
         m_Children: 
@@ -54,3 +56,29 @@ MonoBehaviour:
         m_ChildrenTrack: {fileID: 0}
         m_DefaultChildrenTrackName: Sequences
         m_EditorialClipAsset: {fileID: 8933713669663749119, guid: c410685673e9a5d49a95418789a46939, type: 2}
+    - rid: 4676016575363940353
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: Game
+        m_Fps: -1
+        m_Start: 4
+        m_Duration: 2
+        m_Parent: 0
+        m_Children: 
+        m_Timeline: {fileID: 11400000, guid: 894ce6d360e623f4a9dedb4e35b4a254, type: 2}
+        m_ChildrenTrack: {fileID: 0}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: 6546444630849028607, guid: c410685673e9a5d49a95418789a46939, type: 2}
+    - rid: 4676016575363940355
+      type: {class: TimelineSequence, ns: UnityEngine.Sequences, asm: Unity.Sequences}
+      data:
+        m_Name: Setup
+        m_Fps: -1
+        m_Start: 7.133333333333
+        m_Duration: 2
+        m_Parent: 0
+        m_Children: 
+        m_Timeline: {fileID: 11400000, guid: c237421b8cd0352428862b46ac7fd7e5, type: 2}
+        m_ChildrenTrack: {fileID: 0}
+        m_DefaultChildrenTrackName: Sequences
+        m_EditorialClipAsset: {fileID: -5232223919678739149, guid: c410685673e9a5d49a95418789a46939, type: 2}
