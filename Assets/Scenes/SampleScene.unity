@@ -6952,6 +6952,8 @@ MonoBehaviour:
   objective: 0
   text: {fileID: 1730438626}
   labParent: {fileID: 1037120150}
+  explosion: {fileID: 510637719346592271, guid: 60bf16e127c89764ea6d3b2a99bf0950, type: 3}
+  car: {fileID: 360527387}
   currentLabEquipment: 0
 --- !u!1 &1846255263
 GameObject:

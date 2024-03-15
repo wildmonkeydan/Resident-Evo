@@ -17,6 +17,8 @@ public class ObjectiveManager : MonoBehaviour
     public Objective objective = Objective.FindLab;
     public TextMeshProUGUI text;
     public GameObject labParent;
+    public GameObject explosion;
+    public Transform car;
 
     public int currentLabEquipment;
 
@@ -38,7 +40,7 @@ public class ObjectiveManager : MonoBehaviour
             case Objective.DestroyLab:
                 if(currentLabEquipment <= 0)
                 {
-                    ChangeObjective(2);
+                    ChangeObjective(3);
                 }
                 break;
         }
@@ -60,6 +62,7 @@ public class ObjectiveManager : MonoBehaviour
                 break;
             case Objective.Escape:
                 text.text = "Escape!";
+                InvokeRepeating("Explosion", 0.5f, 1f);
                 break;
         }
     }
@@ -67,5 +70,11 @@ public class ObjectiveManager : MonoBehaviour
     public void BreakEquipment()
     {
         currentLabEquipment--;
+    }
+
+    void Explosion()
+    {
+        GameObject obj = Instantiate(explosion, car.position + Random.onUnitSphere, Random.rotation);
+        obj.transform.localScale = Vector3.one * Random.Range(1f, 6f);
     }
 }
