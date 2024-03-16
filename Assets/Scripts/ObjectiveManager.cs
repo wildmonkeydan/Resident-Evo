@@ -19,6 +19,8 @@ public class ObjectiveManager : MonoBehaviour
     public GameObject labParent;
     public GameObject explosion;
     public Transform car;
+    public GameObject tyrant;
+    public Transform pod;
 
     public int currentLabEquipment;
 
@@ -40,7 +42,7 @@ public class ObjectiveManager : MonoBehaviour
             case Objective.DestroyLab:
                 if(currentLabEquipment <= 0)
                 {
-                    ChangeObjective(3);
+                    ChangeObjective(2);
                 }
                 break;
         }
@@ -59,6 +61,11 @@ public class ObjectiveManager : MonoBehaviour
                 break;
             case Objective.KillTyrant:
                 text.text = "Kill the tyrant";
+
+                Vector3 podPos = pod.position;
+                Destroy(pod.gameObject);
+                Instantiate(tyrant, podPos, Quaternion.identity);
+
                 break;
             case Objective.Escape:
                 text.text = "Escape!";
