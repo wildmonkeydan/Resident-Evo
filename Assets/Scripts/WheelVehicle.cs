@@ -224,6 +224,7 @@ namespace VehicleBehaviour {
         public RectTransform needle;
 
         private Gamepad gamepad;
+        private int fuelConsumption;
 
         // Init rigidbody, center of mass, wheels and more
         void Start() {
@@ -264,6 +265,9 @@ namespace VehicleBehaviour {
             {
                 Debug.Log("Keyboard");
             }
+
+            fuelConsumption = (int)PlayerPrefs.GetFloat("Fuel");
+            Debug.Log(fuelConsumption);
         }
 
         // Visual feedbacks and boost regen
@@ -332,7 +336,7 @@ namespace VehicleBehaviour {
                 foreach (WheelCollider wheel in driveWheel)
                 {
                     wheel.motorTorque = throttle * motorTorque.Evaluate(speed) * diffGearing / driveWheel.Length;
-                    fuel -= Mathf.Abs(throttle) / 10000;
+                    fuel -= Mathf.Abs(throttle) / fuelConsumption;
                 }
             }
             else if (throttle != 0)

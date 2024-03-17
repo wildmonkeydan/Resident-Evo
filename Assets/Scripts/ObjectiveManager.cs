@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ObjectiveManager : MonoBehaviour
 {
@@ -11,18 +14,28 @@ public class ObjectiveManager : MonoBehaviour
         FindLab,
         DestroyLab,
         KillTyrant,
-        Escape
+        Escape,
+        Ending
     }
 
     public Objective objective = Objective.FindLab;
     public TextMeshProUGUI text;
+    public TextMeshProUGUI countdown;
     public GameObject labParent;
     public GameObject explosion;
     public Transform car;
     public GameObject tyrant;
     public Transform pod;
+    public GameObject helicopter;
+    public AudioSource jukebox;
+    public AudioClip bigBad;
+    public AudioClip bigExplosion;
+    public RawImage fade;
+    public PlayableDirector endingDirector;
 
-    public int currentLabEquipment;
+    private int currentLabEquipment;
+    private float escapeTimer = 60f;
+    private bool failed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +43,8 @@ public class ObjectiveManager : MonoBehaviour
         text.text = "Find the lab";
 
         currentLabEquipment = labParent.transform.childCount;
+        helicopter.SetActive(false);
+        escapeTimer = PlayerPrefs.GetInt("EscapeTime");
     }
 
     // Update is called once per frame
@@ -44,6 +59,29 @@ public class ObjectiveManager : MonoBehaviour
                 {
                     ChangeObjective(2);
                 }
+                break;
+            case Objective.Escape:
+                escapeTimer -= Time.deltaTime;
+
+                if (escapeTimer >= 0)
+                {
+                    countdown.text = string.Format("{0:F2}", escapeTimer);
+                }
+                else
+                {
+                    if (!failed)
+                    {
+                        failed = true;
+                        jukebox.PlayOneShot(bigExplosion);
+                    }
+                    fade.color += new Color(0, 0, 0, Time.deltaTime);
+
+                    if(fade.color.a >= 1)
+                    {
+                        SceneManager.LoadScene("Fail");
+                    }
+                }
+
                 break;
         }
     }
@@ -65,11 +103,18 @@ public class ObjectiveManager : MonoBehaviour
                 Vector3 podPos = pod.position;
                 Destroy(pod.gameObject);
                 Instantiate(tyrant, podPos, Quaternion.identity);
+                jukebox.Stop();
+                jukebox.clip = bigBad;
+                jukebox.Play();
 
                 break;
             case Objective.Escape:
                 text.text = "Escape!";
                 InvokeRepeating("Explosion", 0.5f, 1f);
+                helicopter.SetActive(true);
+                break;
+            case Objective.Ending:
+                endingDirector.Play();
                 break;
         }
     }
