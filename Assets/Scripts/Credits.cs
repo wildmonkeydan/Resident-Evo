@@ -40,7 +40,7 @@ public class Credits : MonoBehaviour
             credits.rectTransform.localPosition += new Vector3(0, speed * Time.deltaTime);
             //credits.rectTransform.position = new Vector3(credits.rectTransform.position.x, credits.rectTransform.position.y, 0);
 
-            if(credits.rectTransform.localPosition.y >= 1600)
+            if(credits.rectTransform.localPosition.y >= 1800)
             {
                 overseer.Results();
                 SceneManager.LoadScene("Results");

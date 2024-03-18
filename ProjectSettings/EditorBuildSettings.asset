@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/HPSXRP.unity
+    guid: f405a4b5c7a174649a8b4f00893559e9
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 71bb9007b28317e4181a1600ab9d325f
   - enabled: 1
