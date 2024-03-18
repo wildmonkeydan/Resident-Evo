@@ -14,6 +14,7 @@ namespace VehicleBehaviour
         public TextMeshProUGUI fuelText;
 
         private bool fuelOut = false;
+        
         // Start is called before the first frame update
         void Start()
         {
@@ -38,6 +39,13 @@ namespace VehicleBehaviour
         {
             fuelText.text = "Out of Fuel!\nPress enter to restart";
             fuelOut = true;
+        }
+
+        public void Results()
+        {
+            PlayerPrefs.SetFloat("Time", Time.timeSinceLevelLoad);
+            PlayerPrefs.SetInt("Score", score);
+            PlayerPrefs.Save();
         }
     }
 }

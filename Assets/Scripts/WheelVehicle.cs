@@ -10,6 +10,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using System.Linq;
+using System;
 
 #if MULTIOSCONTROLS
     using MOSC;
@@ -222,6 +224,9 @@ namespace VehicleBehaviour {
         public float fuel = 1f;
         public UnityEvent fuelRunsOut;
         public RectTransform needle;
+        public MeshRenderer carMr;
+        public Material gold;
+        public Transform[] resetPoints;
 
         private Gamepad gamepad;
         private int fuelConsumption;
@@ -268,6 +273,14 @@ namespace VehicleBehaviour {
 
             fuelConsumption = (int)PlayerPrefs.GetFloat("Fuel");
             Debug.Log(fuelConsumption);
+
+            if(PlayerPrefs.GetInt("Gold") == 1)
+            {
+                for(int i = 0; i < carMr.materials.Length; i++)
+                {
+                    carMr.materials[i] = gold;
+                }
+            }
         }
 
         // Visual feedbacks and boost regen
@@ -300,13 +313,28 @@ namespace VehicleBehaviour {
                     throttle = GetInput(throttleInput) - GetInput(brakeInput);
                 }
                 // Boost
-                boosting = (GetInput(boostInput) > 0.5f);
+                boosting = GetInput(boostInput) > 0.5f;
                 // Turn
                 steering = turnInputCurve.Evaluate(GetInput(turnInput)) * steerAngle;
                 // Dirft
                 drift = GetInput(driftInput) > 0 && rb.velocity.sqrMagnitude > 100;
                 // Jump
                 jumping = GetInput(jumpInput) != 0;
+
+                if (gamepad != null)
+                {
+                    if(gamepad.triangleButton.wasPressedThisFrame)
+                    {
+                        ResetCar();
+                    }
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.Tab))
+                    {
+                        ResetCar();
+                    }
+                }
             }
 
             // Direction
@@ -430,6 +458,21 @@ namespace VehicleBehaviour {
             handbrake = h;
         }
 
+        private void ResetCar()
+        {
+            float[] distances = new float[resetPoints.Length];
+
+            for(int i = 0; i < resetPoints.Length; i++)
+            {
+                distances[i] = Vector3.Distance(resetPoints[i].position, transform.position);
+            }
+
+            int index = Array.IndexOf(distances, distances.Min());
+
+            transform.position = resetPoints[index].position;
+            transform.rotation = Quaternion.identity;
+        }
+
         // MULTIOSCONTROLS is another package I'm working on ignore it I don't know if it will get a release.
 #if MULTIOSCONTROLS
         private static MultiOSControls _controls;
@@ -446,7 +489,7 @@ namespace VehicleBehaviour {
                 switch (input)
                 {
                     case "Throttle":
-                        axis = gamepad.rightTrigger.ReadValue();
+                        axis = gamepad.rightTrigger.ReadValue() - gamepad.leftTrigger.ReadValue();
                         break;
                     case "Brake":
                         axis = gamepad.leftTrigger.ReadValue() - gamepad.rightTrigger.ReadValue();                       

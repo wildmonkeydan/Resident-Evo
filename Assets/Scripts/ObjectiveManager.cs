@@ -109,7 +109,7 @@ public class ObjectiveManager : MonoBehaviour
 
                 break;
             case Objective.Escape:
-                text.text = "Escape!";
+                text.text = "Escape to the Roof!";
                 InvokeRepeating("Explosion", 0.5f, 1f);
                 helicopter.SetActive(true);
                 break;

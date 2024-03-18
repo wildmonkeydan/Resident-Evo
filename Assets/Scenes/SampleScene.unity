@@ -211,6 +211,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (22)
@@ -521,6 +525,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (9)
@@ -876,6 +884,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: gold
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b11d315ee8b08445bb23d70f716b7b1, type: 2}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: carMr
+      value: 
+      objectReference: {fileID: 102498475}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
       propertyPath: needle
       value: 
       objectReference: {fileID: 577825731}
@@ -883,6 +899,30 @@ PrefabInstance:
       propertyPath: engineSource
       value: 
       objectReference: {fileID: 1130505307}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: resetPoints.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: resetPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 794116813}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: resetPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1018959248}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: resetPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 460807947}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: resetPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 473724900}
+    - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+      propertyPath: resetPoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 362660086}
     - target: {fileID: 6419800364704749114, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
       propertyPath: fuelRunsOut.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -923,6 +963,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2082207031}
   m_SourcePrefab: {fileID: 100100000, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+--- !u!23 &102498475 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3015079538209665369, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
+  m_PrefabInstance: {fileID: 102498474}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &105768147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,6 +976,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (7)
@@ -1215,6 +1264,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (27)
@@ -1645,6 +1698,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (18)
@@ -1964,6 +2021,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4704918474422382, guid: af384ca59b0f24483b0163f2ae19fe10, type: 3}
   m_PrefabInstance: {fileID: 102498474}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &362660085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362660086}
+  m_Layer: 0
+  m_Name: Point (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362660086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362660085}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.73, y: -7.27, z: 23.466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235982390}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &391257314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7123894499177448314, guid: 2285be0c633062d4daf5c6750b1c8604, type: 3}
@@ -1977,6 +2065,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (21)
@@ -2043,6 +2135,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (15)
@@ -2745,6 +2841,68 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &460807946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 460807947}
+  m_Layer: 0
+  m_Name: Point (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &460807947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460807946}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.42, y: -4.27, z: -12.856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235982390}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &473724899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 473724900}
+  m_Layer: 0
+  m_Name: Point (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &473724900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473724899}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 35.88, y: -4.27, z: 18.63}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235982390}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &491894304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2814,6 +2972,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (4)
@@ -2968,6 +3130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (11)
@@ -3244,6 +3410,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (10)
@@ -3437,6 +3607,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant
@@ -4096,6 +4270,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &794116812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794116813}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &794116813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794116812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235982390}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809065357 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ac567959f8858314f8414dedb3489407, type: 3}
@@ -4479,6 +4684,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (5)
@@ -4611,6 +4820,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (8)
@@ -4816,6 +5029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (23)
@@ -5264,6 +5481,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1018959247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018959248}
+  m_Layer: 0
+  m_Name: Point (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1018959248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018959247}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.98, y: 0, z: 10.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1235982390}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1036402730 stripped
 Transform:
@@ -5769,6 +6017,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (30)
@@ -5835,6 +6087,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (14)
@@ -6123,6 +6379,96 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1182265650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1182265651}
+  - component: {fileID: 1182265652}
+  m_Layer: 5
+  m_Name: TyrantHealth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1182265651
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182265650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5.1984, y: 5.1984, z: 5.1984}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2059601449}
+  - {fileID: 1465120666}
+  m_Father: {fileID: 1635910121}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 61, y: -439.99994}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1182265652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182265650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 1384626015}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 1
+  m_Value: 100
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1189141685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6131,6 +6477,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (2)
@@ -6263,6 +6613,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (6)
@@ -6458,6 +6812,42 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2285be0c633062d4daf5c6750b1c8604, type: 3}
+--- !u!1 &1235982389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235982390}
+  m_Layer: 0
+  m_Name: RespawnPoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1235982390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235982389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50.421, y: 0.864, z: -78.3632}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 794116813}
+  - {fileID: 1018959248}
+  - {fileID: 460807947}
+  - {fileID: 473724900}
+  - {fileID: 362660086}
+  m_Father: {fileID: 0}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1267010290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6601,6 +6991,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1130505307}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 64f5f94261f01d647816a9a4ecd032e6, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6761,6 +7163,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (17)
@@ -6827,6 +7233,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (20)
@@ -6968,6 +7378,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1384626014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384626015}
+  - component: {fileID: 1384626017}
+  - component: {fileID: 1384626016}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1384626015
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384626014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1465120666}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1384626016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384626014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1384626017
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384626014}
+  m_CullTransparentMesh: 1
 --- !u!4 &1387170807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0634e184583874e4d992b729449f5359, type: 3}
@@ -6981,6 +7467,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (28)
@@ -7349,6 +7839,43 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44239d83f2f8d84b8daf1d22f20a870, type: 3}
+--- !u!1 &1465120665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1465120666}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1465120666
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465120665}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1384626015}
+  m_Father: {fileID: 1182265651}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1501653951
 GameObject:
   m_ObjectHideFlags: 0
@@ -7558,6 +8085,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (26)
@@ -7781,6 +8312,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (25)
@@ -8112,6 +8647,7 @@ RectTransform:
   - {fileID: 2043641360}
   - {fileID: 1501653952}
   - {fileID: 1721600515}
+  - {fileID: 1182265651}
   m_Father: {fileID: 966616546}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8133,6 +8669,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (13)
@@ -8238,6 +8778,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (12)
@@ -8443,6 +8987,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (19)
@@ -8893,6 +9441,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (16)
@@ -9091,6 +9643,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (31)
@@ -9231,6 +9787,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (24)
@@ -9521,7 +10081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsGlobal: 0
   priority: 1
-  blendDistance: 1
+  blendDistance: 1.2
   weight: 1
   sharedProfile: {fileID: 11400000, guid: e32a44826c819a1479a78459a9e12627, type: 2}
 --- !u!65 &1863229056
@@ -9573,6 +10133,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (1)
@@ -9825,6 +10389,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (3)
@@ -10485,6 +11053,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1037120151}
     m_Modifications:
+    - target: {fileID: 767290023034988183, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
+      propertyPath: destroy
+      value: 
+      objectReference: {fileID: 8300000, guid: fb31c36f9a9398b4face30a740ebcefd, type: 3}
     - target: {fileID: 7112254053133756194, guid: c89e75fd34c7e6d46b38ca1a19572fa0, type: 3}
       propertyPath: m_Name
       value: LabDesk Variant (29)
@@ -10821,6 +11393,82 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2285be0c633062d4daf5c6750b1c8604, type: 3}
+--- !u!1 &2059601448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2059601449}
+  - component: {fileID: 2059601451}
+  - component: {fileID: 2059601450}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2059601449
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059601448}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1182265651}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -4.8358, y: 0}
+  m_SizeDelta: {x: -9.6716, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2059601450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059601448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2059601451
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059601448}
+  m_CullTransparentMesh: 1
 --- !u!1001 &2060533412
 PrefabInstance:
   m_ObjectHideFlags: 0

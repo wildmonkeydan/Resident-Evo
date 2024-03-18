@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using VehicleBehaviour;
 
 public class Credits : MonoBehaviour
 {
@@ -12,10 +13,12 @@ public class Credits : MonoBehaviour
     private RawImage image;
     private bool isFading = false;
     private bool rolling = false;
+    private Overseer overseer;
     // Start is called before the first frame update
     void Start()
     {
         image = GetComponent<RawImage>();
+        overseer = FindFirstObjectByType<Overseer>();
     }
 
     // Update is called once per frame
@@ -39,7 +42,8 @@ public class Credits : MonoBehaviour
 
             if(credits.rectTransform.localPosition.y >= 1600)
             {
-                SceneManager.LoadScene("Menu");
+                overseer.Results();
+                SceneManager.LoadScene("Results");
             }
         }
     }

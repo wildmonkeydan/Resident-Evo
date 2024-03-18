@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using VehicleBehaviour;
 
 public class Tyrant : MonoBehaviour
 {
     public GameObject blood;
 
+    private Slider healthBar;
     private WheelVehicle car;
     private NavMeshAgent agent;
     private int health = 100;
@@ -20,6 +22,8 @@ public class Tyrant : MonoBehaviour
         car = GameObject.Find("Car02").GetComponent<WheelVehicle>();
         overseer = FindFirstObjectByType<Overseer>();
         objectiveManager = FindFirstObjectByType<ObjectiveManager>();
+        healthBar = FindFirstObjectByType<Slider>(FindObjectsInactive.Include);
+        healthBar.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -33,6 +37,7 @@ public class Tyrant : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             health -= (int)collision.impulse.magnitude / 100;
+            healthBar.value = health;
 
             Debug.Log(health);
 
@@ -46,6 +51,7 @@ public class Tyrant : MonoBehaviour
                 car.fuel = 1f;
                 overseer.score += 1000;
                 objectiveManager.ChangeObjective(3);
+                Destroy(healthBar.gameObject);
                 Destroy(gameObject);
             }
         }
